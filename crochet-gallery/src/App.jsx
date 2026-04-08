@@ -18,31 +18,62 @@ import img14 from "./images/Media (14).jpg";
 import img15 from "./images/Media (15).jpg";
 import img16 from "./images/Media (16).jpg";
 import img17 from "./images/Media (17).jpg";
-import logo from "./images/Media (18).jpg";
+import img18 from "./images/Media18.jpg";
+import img19 from "./images/Media19.jpg";
+import img20 from "./images/Media20.jpg";
+import img21 from "./images/Media21.jpg";
+
+
+import logo from "./images/logo.jpg";
 
 // ─── DATA ─────────────────────────────────────────────────────────────────────
 const CATEGORIES = ["All", "Floral", "Boho", "Minimal", "Animal", "Pouch & Cover"];
 const SORT_OPTIONS = ["Default", "Price: Low to High", "Price: High to Low", "Best Sellers"];
 
 const images = [
-  { id: 1, src: img1, name: "Purple Flower Phone Pouch", price: 100, best: true, category: "Pouch & Cover", tag: "Hot", color: "#EDE0FF" },
-  { id: 2, src: img2, name: "Granny Square Phone Cover", price: 120, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
-  { id: 3, src: img3, name: "White Daisy Bag Charm", price: 150, best: true, category: "Floral", tag: "Trending", color: "#FFFBF0" },
-  { id: 4, src: img4, name: "Pink Sunflower Keychain", price: 90, best: false, category: "Floral", tag: "New", color: "#FFE8F5" },
-  { id: 5, src: img5, name: "Boo Ghost Keychain", price: 200, best: true, category: "Animal", tag: "Hot", color: "#F5F0FF" },
-  { id: 6, src: img6, name: "Red Double Hearts Car Charm", price: 130, best: false, category: "Boho", tag: null, color: "#FFE0E0" },
-  { id: 7, src: img7, name: "Pink Berry Cluster Car Charm", price: 110, best: false, category: "Boho", tag: null, color: "#FFE8F0" },
-  { id: 8, src: img8, name: "Red Rose Keychain", price: 170, best: true, category: "Floral", tag: "Trending", color: "#FFE0E5" },
-  { id: 9, src: img9, name: "Red Petal Flower Bag Charm", price: 140, best: false, category: "Floral", tag: null, color: "#FFE8E0" },
-  { id: 10, src: img10, name: "Triple Hearts Car Charm", price: 160, best: true, category: "Boho", tag: "Popular", color: "#FFE0F0" },
-  { id: 11, src: img11, name: "Blue Tassel Mini Sling Bag", price: 180, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
-  { id: 12, src: img12, name: "Stacked Hearts Keychain Duo", price: 125, best: false, category: "Boho", tag: "New", color: "#F0E0FF" },
-  { id: 13, src: img13, name: "Earbuds Crochet Cover", price: 135, best: false, category: "Pouch & Cover", tag: null, color: "#D8E8FF" },
-  { id: 14, src: img14, name: "Sunflower & Leaf Keychain", price: 190, best: true, category: "Floral", tag: "Hot", color: "#FFFAE0" },
-  { id: 15, src: img15, name: "Lily of the Valley Charm", price: 210, best: false, category: "Floral", tag: null, color: "#E8FFE8" },
-  { id: 16, src: img16, name: "Cherry · Candle · Heart Set", price: 220, best: false, category: "Animal", tag: "Limited", color: "#FFE8E0" },
-  { id: 17, src: img17, name: "Evil Eye Keychain", price: 250, best: true, category: "Boho", tag: "Premium", color: "#E0EEFF" },
+  { id: 1, src: img1, name: "Phone Pouch", price: 250, best: true, category: "Pouch & Cover", tag: "Hot", color: "#EDE0FF" },
+
+  { id: 2, src: img2, name: "Granny Square Phone Cover", price: 250, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
+
+  { id: 3, src: img3, name: "Double Daisy Keychain", price: 150, best: true, category: "Floral", tag: "Trending", color: "#FFFBF0" },
+
+  { id: 4, src: img4, name: "Sunflower Keychain", price: 140, best: false, category: "Floral", tag: "New", color: "#FFE8F5" },
+
+  { id: 5, src: img5, name: "Ghost Keychain", price: 169, best: true, category: "Animal", tag: "Hot", color: "#F5F0FF" },
+
+  { id: 6, src: img6, name: "Double Heart Car Charm", price: 189, best: false, category: "Boho", tag: null, color: "#FFE0E0" },
+
+  { id: 7, src: img7, name: "Berry Car Charm", price: 169, best: false, category: "Boho", tag: null, color: "#FFE8F0" },
+
+  { id: 8, src: img8, name: "Red Rose Keychain", price: 149, best: true, category: "Floral", tag: "Trending", color: "#FFE0E5" },
+
+  { id: 9, src: img9, name: "Red Petal Flower Charm", price: 149, best: false, category: "Floral", tag: null, color: "#FFE8E0" },
+
+  { id: 10, src: img10, name: "Triple Heart Car Charm", price: 220, best: true, category: "Boho", tag: "Popular", color: "#FFE0F0" },
+
+  { id: 11, src: img11, name: "Mini AirPods Bag", price: 110, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
+
+  { id: 12, src: img12, name: "Triple ❤️ Charm (69/per)", price: 69, best: false, category: "Boho", tag: "New", color: "#F0E0FF" },
+
+  { id: 13, src: img13, name: "Airpods case", price: 149, best: false, category: "Pouch & Cover", tag: null, color: "#D8E8FF" },
+
+  { id: 14, src: img14, name: "Sunflower Keychain (Leaf Style)", price: 140, best: true, category: "Floral", tag: "Hot", color: "#FFFAE0" },
+
+  { id: 15, src: img15, name: "Double Daisy Charm", price: 150, best: false, category: "Floral", tag: null, color: "#E8FFE8" },
+
+  { id: 16, src: img16, name: "Cherry Keychain", price: 130, best: false, category: "Animal", tag: "Limited", color: "#FFE8E0" },
+
+  { id: 17, src: img17, name: "Evil Eye Keychain", price: 130, best: true, category: "Boho", tag: "Premium", color: "#E0EEFF" },
+
+  { id: 18, src: img18, name: "White Daisy Keychain", price: 120, category: "Floral" },
+
+  { id: 19, src: img19, name: "Strawberry Keychain", price: 120, category: "Boho" },
+
+  { id: 20, src: img20, name: "3D ❤️ Keychain", price: 150, category: "Pouch & Cover" },
+
+  { id: 21, src: img21, name: "Cute Flower Cable Cover", price: 180, category: "Pouch & Cover" },
 ];
+
 
 // ─── REAL IMAGE COMPONENT ─────────────────────────────────────────────────────
 function PlaceholderCard({ src, color, id }) {
@@ -427,23 +458,60 @@ export default function App() {
               <div style={{ position: "absolute", top: "-40px", right: "-40px", width: "200px", height: "200px", borderRadius: "50%", background: "rgba(255,56,92,0.12)", filter: "blur(40px)" }} />
               <div style={{ position: "absolute", bottom: "-30px", left: "30%", width: "150px", height: "150px", borderRadius: "50%", background: "rgba(201,168,76,0.12)", filter: "blur(30px)" }} />
               <div style={{ position: "relative", zIndex: 2 }}>
-                <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "11px", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "6px", fontWeight: "500" }}>Handcrafted with love</p>
+                <p style={{ color: "rgba(255,255,255,0.5)", fontSize: "11px", letterSpacing: "2px", textTransform: "uppercase", marginBottom: "6px", fontWeight: "500" }}>
+                  Handcrafted with love
+                </p>
+
                 <h2 style={{ fontFamily: "var(--font-display)", color: "#fff", fontSize: "clamp(20px,4vw,28px)", lineHeight: 1.2, maxWidth: "260px" }}>
                   Unique <em style={{ color: "#FFAD33" }}>Keychains</em> for Every Vibe
                 </h2>
-                <button style={{
-                  marginTop: "16px", background: "linear-gradient(135deg, #FF385C, #D4284A)",
-                  color: "#fff", padding: "10px 22px", borderRadius: "50px",
-                  fontSize: "12px", fontWeight: "600", letterSpacing: "0.5px",
-                  boxShadow: "0 4px 20px rgba(255,56,92,0.4)",
-                  transition: "transform 0.2s, box-shadow 0.2s"
-                }}
-                  onMouseOver={e => { e.currentTarget.style.transform = "translateY(-2px)"; e.currentTarget.style.boxShadow = "0 8px 28px rgba(255,56,92,0.5)"; }}
-                  onMouseOut={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = "0 4px 20px rgba(255,56,92,0.4)"; }}
+
+                <button
+                  style={{
+                    marginTop: "16px",
+                    background: "linear-gradient(135deg, #FF385C, #D4284A)",
+                    color: "#fff",
+                    padding: "10px 22px",
+                    borderRadius: "50px",
+                    fontSize: "12px",
+                    fontWeight: "600",
+                    letterSpacing: "0.5px",
+                    boxShadow: "0 4px 20px rgba(255,56,92,0.4)",
+                    transition: "transform 0.2s, box-shadow 0.2s"
+                  }}
+                  onMouseOver={e => {
+                    e.currentTarget.style.transform = "translateY(-2px)";
+                    e.currentTarget.style.boxShadow = "0 8px 28px rgba(255,56,92,0.5)";
+                  }}
+                  onMouseOut={e => {
+                    e.currentTarget.style.transform = "";
+                    e.currentTarget.style.boxShadow = "0 4px 20px rgba(255,56,92,0.4)";
+                  }}
                   onClick={() => document.getElementById("catalogue")?.scrollIntoView({ behavior: "smooth" })}
                 >
                   Shop Now ↓
                 </button>
+
+                {/* NEW TEXT */}
+                <p style={{
+                  marginTop: "14px",
+                  fontSize: "12px",
+                  color: "rgba(255,255,255,0.75)",
+                  lineHeight: "1.5"
+                }}>
+                  🎁 Perfect return gifts for any function <br />
+                  ✨ Get your own customised gifts
+                </p>
+                <p style={{
+                  marginTop: "10px",
+                  fontSize: "12px",
+                  color: "#fff",
+                  fontWeight: "600",
+                  lineHeight: "1.6"
+                }}>
+                  📞 Order via WhatsApp: <br />
+                  <span style={{ color: "#FFAD33" }}>+91 6383442969</span> / <span style={{ color: "#FFAD33" }}>+91 8523908568</span>
+                </p>
               </div>
               <div style={{ fontSize: "clamp(40px,8vw,64px)", position: "relative", zIndex: 2, animation: "pulse 3s ease-in-out infinite" }}>🪢</div>
             </div>
@@ -631,7 +699,7 @@ export default function App() {
                           <p style={{ fontSize: "16px", fontWeight: "700", color: "var(--rose)" }}>₹{img.price}</p>
                         </div>
                         <Stars n={img.best ? 5 : 4} />
-                        <button
+                        {/* <button
                           onClick={() => addToCart(img)}
                           style={{
                             marginTop: "10px", width: "100%", padding: "9px",
@@ -643,7 +711,7 @@ export default function App() {
                           }}
                           onMouseOver={e => { e.currentTarget.style.transform = "translateY(-1px)"; e.currentTarget.style.boxShadow = "0 6px 20px rgba(26,26,46,0.3)"; }}
                           onMouseOut={e => { e.currentTarget.style.transform = ""; e.currentTarget.style.boxShadow = "0 3px 12px rgba(26,26,46,0.2)"; }}
-                        >🛍️ Add to Cart</button>
+                        >🛍️ Add to Cart</button> */}
                       </div>
                     </div>
                   ))}
