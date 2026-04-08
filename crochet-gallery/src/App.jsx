@@ -33,7 +33,7 @@ const SORT_OPTIONS = ["Default", "Price: Low to High", "Price: High to Low", "Be
 const images = [
   { id: 1, src: img1, name: "Phone Pouch", price: 249, best: true, category: "Pouch & Cover", tag: "Hot", color: "#EDE0FF" },
 
-  { id: 2, src: img2, name: "Granny Square Phone Cover", price: 250, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
+  { id: 2, src: img2, name: "Granny Square Phone Cover", price: 249, best: false, category: "Pouch & Cover", tag: null, color: "#D8EEFF" },
 
   { id: 3, src: img3, name: "Double Daisy Keychain", price: 150, best: true, category: "Floral", tag: "Trending", color: "#FFFBF0" },
 
